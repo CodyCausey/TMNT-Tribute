@@ -42,12 +42,3 @@
     transition: ease-in-out 0.2s;
   }
 }
-
-@media all and (max-width: 750px) {
-  li {
-    padding: 0px;
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-  }
-}

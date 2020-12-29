@@ -57,19 +57,6 @@
   transition: ease-in-out 0.2s;
 }
 
-@media all and (max-width: 750px) {
-  li {
-    padding: 0px;
-    display: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .bottom__container__history {
   height: 100px;
   width: 100%;
