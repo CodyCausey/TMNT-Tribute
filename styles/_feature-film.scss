@@ -1,0 +1,47 @@
+.bottom__container__feature__film {
+  @include red__container__styling();
+
+  h1 {
+    @include h1__container__styling();
+  }
+}
+
+.film1 {
+  background-image: url(../images/film1.jpg);
+  @include picture__styling__left;
+}
+
+.film2 {
+  background-image: url(../images/Teenage_Mutant_Ninja_Turtles_II.jpg);
+  @include picture__styling__right;
+}
+
+.film3 {
+  background-image: url(../images/Teenage_Mutant_Ninja_Turtles_III.jpg);
+  @include picture__styling__left;
+}
+
+.Films {
+  display: flex;
+  align-items: center;
+  padding: 32px 118px;
+}
+.film__text {
+  padding: 32px;
+  line-height: 1.8;
+}
+.character__section {
+  max-width: 1400px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 760px) {
+  .Films {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Turtles";
+  src: url("fonts/Turtles.woff2") format("woff2"),
+    url("fonts/Turtles.ttf") format("truetype") url("fonts/Turtles.woff")
+      format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+@mixin red__container__styling {
+  height: 100px;
+  width: 100%;
+  background-color: $section__top__bottom__border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@mixin picture__styling__left {
+  min-width: 240px;
+  height: 415px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-items: flex-end;
+  // box-shadow: rgba(227, 59, 59, 0.4) -5px 5px, rgba(227, 59, 59, 0.3) -10px 10px,
+  //   rgba(227, 59, 59, 0.2) -15px 15px, rgba(227, 59, 59, 0.1) -20px 20px,
+  //   rgba(227, 59, 59, 0.05) -25px 25px;
+  // border: 2px $section__top__bottom__border solid;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@mixin picture__styling__right {
+  min-width: 240px;
+  height: 415px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  align-items: flex-end;
+  //
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@mixin h1__container__styling {
+  color: $header__footer__font__color;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  font-size: 1.7rem;
+  font-family: "Turtles";
+  letter-spacing: 2px;
+}
+
+@mixin red__line {
+  border: 2px solid $section__top__bottom__border;
+  width: 80%;
+  margin: 0 auto;
+}
+
+$background__color: #78c156;
+$header__footer__font__color: #f7f7f7;
+$section__top__bottom__border: #e33b3b;

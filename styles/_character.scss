@@ -1,0 +1,52 @@
+.bottom__container__character {
+  @include red__container__styling;
+
+  h1 {
+    @include h1__container__styling;
+  }
+}
+
+.leonardo {
+  background-image: url(../images/Leonardo.jpg);
+  @include picture__styling__left;
+}
+
+.Raphael {
+  background-image: url(../images/Raphael.jpg);
+  @include picture__styling__right;
+}
+
+.Michelangelo {
+  background-image: url(../images/Michelangelo.jpg);
+  @include picture__styling__left;
+}
+
+.Donatello {
+  background-image: url(../images/Donatello.jpg);
+  @include picture__styling__right;
+}
+
+.characters {
+  display: flex;
+  align-items: center;
+  padding: 32px 118px;
+}
+.character__text {
+  padding: 32px;
+  line-height: 1.8;
+}
+.character__section {
+  max-width: 1400px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 760px) {
+  .characters {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+}

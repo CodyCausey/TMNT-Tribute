@@ -1,0 +1,41 @@
+@import "./variables";
+@import "./header";
+@import "./history";
+@import "./character";
+@import "./feature-film";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "oswald";
+}
+
+body {
+  background-color: $background__color;
+}
+
+.photo__of__all__4 {
+  background-image: url(../images/neca_tmnt_hero.png);
+  height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: solid 3px $section__top__bottom__border;
+}
+
+.footer {
+  height: 80px;
+  width: 100%;
+  background-color: $header__footer__font__color;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 3px $section__top__bottom__border solid;
+  font-size: 1.1rem;
+}
+
+.red__line {
+  @include red__line;
+}

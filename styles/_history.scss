@@ -1,0 +1,54 @@
+// History Section
+.bottom__container__history {
+  @include red__container__styling();
+
+  h1 {
+    @include h1__container__styling();
+  }
+}
+
+.turtles__comic {
+  background-image: url(../images/A27b75fe-09ea-47f9-9e9f-f72e6ea0213d.jpg);
+  height: 316px;
+  width: 220px;
+  object-fit: fill;
+  background-position: center;
+  background-size: cover;
+  //
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.history__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+@media all and (max-width: 760px) {
+  .history__section {
+    flex-direction: column;
+  }
+  h3 {
+    padding-bottom: 32px;
+    text-align: center;
+  }
+}
+
+h3 {
+  padding-right: 32px;
+}
+
+.red__line {
+  @include red__line;
+}
+
+.paragraph__section {
+  padding: 32px 0;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

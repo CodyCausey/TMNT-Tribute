@@ -1,0 +1,53 @@
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: $header__footer__font__color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header__logo {
+    background-image: url(../images/TMNT_logo.png);
+    height: 70px;
+    width: 200px;
+    min-width: 195px;
+    object-fit: fill;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+  }
+
+  ul {
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Turtles";
+    font-size: 1.2rem;
+  }
+
+  li {
+    display: inline-block;
+    padding: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: "Turtles";
+  }
+
+  a:hover {
+    background-color: $background__color;
+    transition: ease-in-out 0.2s;
+  }
+}
+
+@media all and (max-width: 750px) {
+  li {
+    padding: 0px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
